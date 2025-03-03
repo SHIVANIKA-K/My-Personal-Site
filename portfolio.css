@@ -322,3 +322,55 @@ background-color: #7894FF;
 .t1{
     float: left;
 }
+
+/*FOR LARGE SCREEN*/
+@media (min-width: 1681px) {
+    .container {
+        grid-template-columns: 800px 700px; /* Adjust grid for larger screens */
+    }
+
+    .circle {
+        width: 800px; /* Scale circular elements properly */
+        height: 200px;
+    }
+
+    .s-container {
+        width: 1400px; /* Increase container width */
+    }
+
+    .circle-2 {
+        width: 1300px;
+        height: 750px;
+    }
+
+    .circle-3 {
+        width: 1000px;
+        height: 650px;
+        font-size: 24px; /* Make text readable on large screens */
+    }
+
+    .thrid-container {
+        width: 1400px;
+    }
+
+    .circle-5 {
+        width: 750px;
+        height: 900px;
+        font-size: 55px;
+    }
+
+    .info {
+        grid-template-columns: 680px;
+        grid-template-rows: repeat(4, 220px);
+        font-size: 22px;
+    }
+
+    .sat {
+        left: 1200px; /* Adjust position */
+    }
+
+    .earth {
+        bottom: -350px;
+    }
+}
+
