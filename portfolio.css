@@ -26,15 +26,31 @@
         font-family: 'Goudy Bookletter 1911', serif;
     }
 
-    .second, .third, .fourth {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
+    .second {
+        position: absolute;
+        top: 800px; /* Adjust based on layout needs */
+        left: 50%;
+        transform: translateX(-50%);
         font-size: clamp(24px, 4vw, 36px);
         font-family: 'Goudy Bookletter 1911', serif;
-        position: relative;
-        top: auto;
+    }
+
+    .third {
+        position: absolute;
+        top: 1600px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(24px, 4vw, 36px);
+        font-family: 'Goudy Bookletter 1911', serif;
+    }
+
+    .fourth {
+        position: absolute;
+        top: 2400px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(24px, 4vw, 36px);
+        font-family: 'Goudy Bookletter 1911', serif;
     }
 
     .grid-1 {
@@ -44,6 +60,10 @@
         gap: 50px;
         margin: 0 auto;
         width: 90%;
+        position: absolute;
+        top: 1200px; /* Adjust positioning as necessary */
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .h2 {
@@ -92,6 +112,9 @@
         color: red;
         width: 100%;
         text-align: center;
-        position: relative;
+        position: absolute;
+        top: 3200px; /* Adjust according to content length */
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
