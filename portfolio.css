@@ -1,74 +1,52 @@
-@media (min-width: 319px) and (max-width: 1680px) {
-    body{
+@media screen and (max-width: 1680px) {
+    body {
         margin: 0px;
         background-color: black;
     }
-    
-    .main{
+
+    .main {
         text-align: center;
         position: relative;
-        bottom:0px;
+        bottom: 0px;
         margin-bottom: -4px;
-     
     }
-    
-    .g1{
+
+    .g1 {
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-rows: 120px;
-        grid-template-columns: 250px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
         color: #F8F6F4;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-60%, -60%);
-        font-size: 36px;
-        font-family: 'Goudy Bookletter 1911', serif;
-    
-    }
-    
-    .second{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        position:absolute;
-        margin: 0px;
-        font-size: 36px;
+        transform: translate(-50%, -50%);
+        font-size: clamp(24px, 4vw, 36px); /* Responsive font size */
         font-family: 'Goudy Bookletter 1911', serif;
     }
-    .third{
+
+    .second, .third, .fourth {
         display: grid;
         justify-content: center;
         align-items: center;
         margin: 0px;
-        font-size: 36px;
+        font-size: clamp(24px, 4vw, 36px);
         font-family: 'Goudy Bookletter 1911', serif;
-        position: absolute;
-        top: 1662px;
+        position: relative;
+        top: auto;
     }
-    .fourth{
+
+    .grid-1 {
         display: grid;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        font-size: 36px;
-        font-family: 'Goudy Bookletter 1911', serif;
-        position: absolute;
-        top: 2534px;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px;
+        margin: 0 auto;
+        width: 90%;
     }
-    .grid-1{
-        display: grid;
-        grid-template-rows: 220px 200px;
-        grid-template-columns: 300px  300px; 
-        gap:100px;
-        margin-top:-260px;
-        margin-left: 250px;
-        
-    
-    }
-    
-    .h2{
+
+    .h2 {
         display: grid;
         justify-content: center;
         align-items: center;
@@ -77,65 +55,43 @@
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 36px;
+        font-size: clamp(24px, 4vw, 36px);
         font-family: 'Goudy Bookletter 1911', serif;
-       
     }
-    
-    .g2{
-        
+
+    .g2 {
         border: 0px solid black;
         margin-top: -500px;
+    }
 
-        
+    .song {
+        position: relative;
+        margin-bottom: 70px;
     }
-    
-   
-    .song{
-       position: relative;
-       margin-bottom: 70px;
-    }
-    .s1{
-        position: absolute;
-        right:46%;
+
+    .s1, .s2 {
         border: 3px solid #E50914;
-        background-color:#E50914;
+        background-color: #E50914;
         border-radius: 15%;
         height: 50px;
-        width:100px;
+        width: 100px;
         font-weight: bold;
-    
     }
-    .s1{
+
+    .s1 {
         position: absolute;
-        right:48%;
-        border: 3px solid #E50914;
-        background-color:#E50914;
-        border-radius: 15%;
-        height: 50px;
-        width:100px;
-        font-weight: bold;
-    
+        right: 48%;
     }
-    .s2{
+
+    .s2 {
         position: absolute;
-        right:38%;
-        border: 3px solid #E50914;
-        background-color:#E50914;
-        border-radius: 15%;
-        height: 50px;
-        width:100px;
-        font-weight: bold;
-    
+        right: 38%;
     }
-    
-    footer{
-        color:red;
-        height: 5px;
-        width: 1263px;
-        position: absolute;
-        top: 3442px;
+
+    footer {
+        color: red;
+        width: 100%;
         text-align: center;
+        position: relative;
     }
-    
-    }
+}
